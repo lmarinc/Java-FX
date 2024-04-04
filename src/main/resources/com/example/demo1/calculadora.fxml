@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="313.0" prefWidth="333.0" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.CalculatorController">
+
+    <TextField fx:id="display"  GridPane.columnSpan="4" />
+    <Button onAction="#pressOperator" text="/" GridPane.rowIndex="1" />
+    <Button onAction="#pressOperator" text="*" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Button onAction="#pressOperator" text="-" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Button onAction="#pressOperator" text="+" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <!-- Add more buttons for other numbers and operations -->
+    <Button onAction="#calculate" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+   <Button layoutX="196.0" layoutY="199.0" onAction="#pressClear" text="C" GridPane.rowIndex="4" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
