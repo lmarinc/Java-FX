@@ -47,21 +47,21 @@ public class CalculatorController {
         display.setText("");
     }
 
-    protected void handleKeyPress(KeyEvent event) {
-        String key = event.getText(); // Obtener el texto de la tecla pulsada
-
-        // Verificar si el texto coincide con alguno de los operadores
-        if (key.equals("/") || key.equals("*") || key.equals("+") || key.equals("-")) {
-            pressOperator(key);
-        }
-    }
-
-    @FXML
-    protected void pressOperator(String operator) {
-        num1 = Double.valueOf(display.getText());
-        this.operator = operator;
-        display.setText("");
-    }
+//    protected void handleKeyPress(KeyEvent event) {
+//        String key = event.getText(); // Obtener el texto de la tecla pulsada
+//
+//        // Verificar si el texto coincide con alguno de los operadores
+//        if (key.equals("/") || key.equals("*") || key.equals("+") || key.equals("-")) {
+//            pressOperator(key);
+//        }
+//    }
+//
+//    @FXML
+//    protected void pressOperator(String operator) {
+//        num1 = Double.valueOf(display.getText());
+//        this.operator = operator;
+//        display.setText("");
+//    }
 
 
 
