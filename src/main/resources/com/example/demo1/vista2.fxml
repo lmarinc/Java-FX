@@ -4,7 +4,9 @@
 <?import javafx.scene.layout.*?>
 
 <GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.VistaController2">
-    <TableView fx:id="personTable" GridPane.columnIndex="0" GridPane.columnSpan="12" GridPane.rowIndex="0" GridPane.rowSpan="12">
+    <Label text="Filtrar por nombre" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="filterInput" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TableView fx:id="personTable" GridPane.columnIndex="0" GridPane.columnSpan="12" GridPane.rowIndex="3" GridPane.rowSpan="12">
         <columns>
             <TableColumn fx:id="nameColumn" text="Nombre" />
             <TableColumn fx:id="surnameColumn" text="Apellidos" />
@@ -12,5 +14,7 @@
         </columns>
     </TableView>
 
-    <Button onAction="#showAddPersonaDialog" text="Agregar Persona" GridPane.columnIndex="0" GridPane.rowIndex="14" />
+    <Button onAction="#showAddPersonaDialog" text="Agregar Persona" GridPane.columnIndex="0" GridPane.rowIndex="17" />
+    <Button onAction="#showEditPersonaDialog" text="Editar Persona" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+    <Button onAction="#eliminarPersona" text="Eliminar" GridPane.columnIndex="2" GridPane.rowIndex="17" />
 </GridPane>
