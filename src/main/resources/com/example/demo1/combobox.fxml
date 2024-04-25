@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.ComboController">
+    <Label text="Fecha Alquiler" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <DatePicker fx:id="fechaAlquilerInput" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+    <Label text="Fecha Entrega Vehiculo" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <DatePicker fx:id="fechaEntregaInput" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+    <Label text="Vehiculos" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+    <ComboBox fx:id="vehiculosInput" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+
+    <Label text="Clientes" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+    <ComboBox fx:id="clientesInput" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+
+    <Label text="Descripcion" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+    <TextField fx:id="descripcionInput" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+
+    <Label text="Marca" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+    <TextField fx:id="marcaInput" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+
+    <Label text="Kilometros" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+    <TextField fx:id="kilometrosInput" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+
+    <Label text="Precio" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+    <TextField fx:id="precioInput" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+
+    <Label text="NIF" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+    <TextField fx:id="nifInput" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+
+    <Label text="Direccion" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+    <TextField fx:id="direccionInput" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+
+    <Label text="Poblacion" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+    <TextField fx:id="poblacionInput" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+
+    <Label text="Total Servicio" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+    <TextField fx:id="totalServicioInput" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+
+    <Button onAction="#guardar" text="Guardar" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+
+
+</GridPane>
