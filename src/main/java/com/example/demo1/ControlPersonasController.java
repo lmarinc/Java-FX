@@ -16,11 +16,9 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.collections.ObservableList;
 import javafx.collections.FXCollections;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.cell.PropertyValueFactory;
 
 
-
-public class VistaController2 {
+public class ControlPersonasController {
 
 //    @FXML
 //    private TextField nameInput;

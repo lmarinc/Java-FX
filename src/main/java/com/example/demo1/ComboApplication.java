@@ -6,9 +6,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ComboApplication extends Application {
     @Override
@@ -23,6 +20,4 @@ public class ComboApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
-
-
 }

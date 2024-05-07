@@ -46,6 +46,7 @@
     <TextField fx:id="totalServicioInput" GridPane.columnIndex="3" GridPane.rowIndex="9" />
 
     <Button onAction="#guardar" text="Guardar" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+    <Button onAction="#mostrarTabla" text="Mostrar Tabla" GridPane.columnIndex="4" GridPane.rowIndex="10" />
 
 
 </GridPane>
